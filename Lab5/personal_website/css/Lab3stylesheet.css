@@ -1,0 +1,71 @@
+
+
+hr{
+  border: solid 1px grey;
+  width: 100%;
+}
+
+body {
+  background-color: beige;
+}
+nav {
+  background-color: lightblue;
+  text-align: center;
+  display: block;
+}
+h1 {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+img {
+  padding: 10px;
+  height: 10%;
+  width: 10%;
+}
+
+/* .wrapper{
+  display: grid;
+
+} */
+.courses{
+  display: grid;
+}
+.course-section{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  height: 70px;
+}
+.left-area{
+  grid-column: 1/2;
+}
+.right-area{
+  grid-column: 2;
+}
+.class-description{
+  display: inline;
+  text-indent: 8px;
+}
+
+@media screen and (max-width: 960px){
+
+  .courses{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .course-section{
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+  }
+  .right-area{
+    grid-row: 1;
+  }
+  .links{
+    display: block;
+  }
+}
+
+
+
